@@ -19,5 +19,14 @@ requete.send(); // We send the query
 requete.onload = function() {
     if(requete.readyState === XMLHttpRequest.DONE){
 
+        if(requete.status === 200){
+
+            let response     = requete.response //stock the response in let
+            let priceInEuros = response.EUR.last;
+            console.log(priceInEuros);
+            
+        } else {
+            alert('une erreur est survenu. Veuillez réessayer plus tard');
+        }
     }
 }
