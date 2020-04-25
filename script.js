@@ -24,6 +24,7 @@ requete.onload = function() {
             let response     = requete.response //stock the response in let
             let priceInEuros = response.EUR.last; //stock price In euros in let
             console.log(priceInEuros);
+            document.querySelector('#price_label').textContent = priceInEuros;
             
         } else {
             alert('une erreur est survenu. Veuillez réessayer plus tard');
