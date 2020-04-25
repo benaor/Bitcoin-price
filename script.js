@@ -22,7 +22,7 @@ requete.onload = function() {
         if(requete.status === 200){
 
             let response     = requete.response //stock the response in let
-            let priceInEuros = response.EUR.last;
+            let priceInEuros = response.EUR.last; //stock price In euros in let
             console.log(priceInEuros);
             
         } else {
